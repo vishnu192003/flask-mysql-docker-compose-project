@@ -1,0 +1,201 @@
+/* ==============================
+   General Page Styling
+   ============================== */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #e3f2fd, #f8f9fa);
+    color: #333;
+}
+
+
+/* ==============================
+   Main Container
+   ============================== */
+
+.container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+/* ==============================
+   Main Heading
+   ============================== */
+
+.container h1 {
+    font-size: 38px;
+    font-weight: 700;
+    color: #1e3a8a;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+
+/* ==============================
+   Jumbotron / Employee Card
+   ============================== */
+
+.jumbotron {
+    background: #ffffff !important;
+    padding: 30px !important;
+    border-radius: 15px !important;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    overflow-x: auto;
+}
+
+
+/* ==============================
+   Employee Table
+   ============================== */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+/* Table Header */
+
+thead {
+    background: #1e3a8a;
+    color: white;
+}
+
+thead th {
+    padding: 16px 18px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    white-space: nowrap;
+}
+
+
+/* Table Body */
+
+tbody tr {
+    transition: all 0.2s ease;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f5f8fc;
+}
+
+tbody tr:hover {
+    background-color: #e8f1ff;
+    transform: scale(1.005);
+}
+
+
+/* Table Cells */
+
+tbody td {
+    padding: 15px 18px;
+    text-align: center;
+    font-size: 15px;
+    border-bottom: 1px solid #dee2e6;
+}
+
+
+/* ==============================
+   Employee ID
+   ============================== */
+
+tbody td:first-child {
+    font-weight: bold;
+    color: #1e3a8a;
+}
+
+
+/* ==============================
+   Salary
+   ============================== */
+
+tbody td:nth-child(3) {
+    font-weight: 600;
+    color: #198754;
+}
+
+
+/* ==============================
+   Action Buttons
+   ============================== */
+
+td .btn {
+    margin: 3px;
+    padding: 8px 16px !important;
+    font-size: 14px !important;
+    border-radius: 6px !important;
+    transition: all 0.2s ease;
+}
+
+
+/* Edit Button */
+
+td .btn-success {
+    background-color: #198754;
+    border-color: #198754;
+}
+
+td .btn-success:hover {
+    background-color: #146c43;
+    border-color: #146c43;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(25, 135, 84, 0.3);
+}
+
+
+/* Delete Button */
+
+td .btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+td .btn-danger:hover {
+    background-color: #b02a37;
+    border-color: #b02a37;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(220, 53, 69, 0.3);
+}
+
+
+/* ==============================
+   Responsive Design
+   ============================== */
+
+@media (max-width: 768px) {
+
+    .container {
+        padding-top: 25px;
+    }
+
+    .container h1 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .jumbotron {
+        padding: 15px !important;
+    }
+
+    table {
+        min-width: 750px;
+    }
+
+    thead th,
+    tbody td {
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    td .btn {
+        padding: 6px 10px !important;
+        font-size: 12px !important;
+    }
+}
